@@ -1,9 +1,12 @@
 package exercise2;
 
 public abstract class AbstractContactInfo implements ContactInfo {
-    protected String street, number, floor, door, postalCode, city, phoneNumber;
+    protected String name, surname, street, number, floor, door, postalCode, city, phoneNumber;
 
-    public AbstractContactInfo(String street, String number, String floor, String door, String postalCode, String city, String phoneNumber){
+    public AbstractContactInfo(String name, String surname, String street, String number, String floor, String door, String postalCode, String city, String phoneNumber) {
+
+        this.name =  name;
+        this.surname = surname;
         this.street = street;
         this.number = number;
         this.floor = floor;
