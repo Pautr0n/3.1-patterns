@@ -1,6 +1,6 @@
 package exercise2;
 
-public class UsAddreass extends AbstractAddress{
+public class UsAddreass extends AbstractContactInfo {
 
     public UsAddreass(String street, String number, String floor, String door, String postalCode, String city) {
         super(street, number, floor, door, postalCode, city);
