@@ -2,17 +2,23 @@ package exercise2;
 
 public class FrenchContactInfo extends AbstractContactInfo {
 
-    public FrenchContactInfo(String name, String surname, String street, String number, String floor, String door, String postalCode, String city, String phoneNumber) {
-        super(name, surname, street, number, floor, door, postalCode, city, phoneNumber);
+    public FrenchContactInfo(String name, String surname, String street, String postalCode, String city, String phoneNumber) {
+        super(name, surname, street, postalCode, city, phoneNumber);
     }
 
     @Override
     public String getAddress() {
-        return surname + " " + name + " | " + street + " nº" + number + ", " + floor + "/" + door + ", " + city + "(" + postalCode + ")" + " France";
+        return surname + " " + name + " | " + street + ", " + city + " (" + postalCode + ")" + " France";
     }
 
     @Override
     public String getPhoneNumber() {
         return "+33 " + phoneNumber;
     }
+
+    @Override
+    public String getSurname() {
+        return surname;
+    }
+
 }

@@ -1,16 +1,13 @@
 package exercise2;
 
 public abstract class AbstractContactInfo implements ContactInfo {
-    protected String name, surname, street, number, floor, door, postalCode, city, phoneNumber;
+    protected String name, surname, street, postalCode, city, phoneNumber;
 
-    public AbstractContactInfo(String name, String surname, String street, String number, String floor, String door, String postalCode, String city, String phoneNumber) {
+    public AbstractContactInfo(String name, String surname, String street, String postalCode, String city, String phoneNumber) {
 
         this.name =  name;
         this.surname = surname;
         this.street = street;
-        this.number = number;
-        this.floor = floor;
-        this.door = door;
         this.postalCode = postalCode;
         this.city = city;
         this.phoneNumber = phoneNumber;
@@ -22,4 +19,6 @@ public abstract class AbstractContactInfo implements ContactInfo {
     @Override
     public abstract String getPhoneNumber();
 
+    @Override
+    public abstract String getSurname();
 }
