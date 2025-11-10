@@ -1,4 +1,4 @@
-package exercise2;
+package exercise2.model;
 
 public abstract class AbstractContactInfo implements ContactInfo {
     protected String name, surname, street, postalCode, city, phoneNumber;

@@ -1,4 +1,7 @@
-package exercise2;
+package exercise2.app;
+
+import exercise2.factory.ContactFactory;
+import exercise2.factory.FactoryLoader;
 
 import java.util.Scanner;
 
@@ -42,7 +45,7 @@ public class Menu {
     private void addContactForm(){
         String name, surname, street, postalCode, city, phoneNumber, country;
 
-        System.out.print("Select the country by typing one fo the following options: ES, FR, US");
+        System.out.print("Select the country by typing one fo the following options: ES, FR, US: ");
         country = scanner.nextLine().toUpperCase();
         factory = FactoryLoader.getFactory(country);
 

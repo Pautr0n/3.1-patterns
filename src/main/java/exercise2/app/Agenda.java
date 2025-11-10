@@ -1,4 +1,7 @@
-package exercise2;
+package exercise2.app;
+
+import exercise2.factory.ContactFactory;
+import exercise2.model.ContactInfo;
 
 import java.util.ArrayList;
 import java.util.Comparator;

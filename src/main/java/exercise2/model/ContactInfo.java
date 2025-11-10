@@ -1,4 +1,4 @@
-package exercise2;
+package exercise2.model;
 
 public interface ContactInfo {
     String getAddress();

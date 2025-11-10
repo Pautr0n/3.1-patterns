@@ -1,4 +1,6 @@
-package exercise2;
+package exercise2.factory;
+
+import exercise2.model.ContactInfo;
 
 public interface ContactFactory {
 
