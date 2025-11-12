@@ -1,7 +1,7 @@
-package exercise2.factory;
+package level2.factory;
 
-import exercise2.model.ContactInfo;
-import exercise2.model.UsContactInfo;
+import level2.model.ContactInfo;
+import level2.model.UsContactInfo;
 
 public class UsFactory implements ContactFactory {
     @Override

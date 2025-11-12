@@ -1,4 +1,4 @@
-package exercise2.factory;
+package level2.factory;
 
 public class FactoryLoader {
 

@@ -1,6 +1,5 @@
-package exercise1;
+package level1;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Menu {
@@ -43,10 +42,8 @@ public class Menu {
                     try {
                         int pos = Integer.parseInt(input);
                         undo.rmCommandByPos(pos);
-                    } catch (InputMismatchException e) {
-                        System.out.println("Incorrect position, only integer numbers allowed");
-                    } catch (IndexOutOfBoundsException e) {
-                        System.out.println("This position does not exists, please choose option 5 'Show command's history' to verify the correct position");
+                    } catch (NumberFormatException e) {
+                        System.err.println("Incorrect value, only integer numbers allowed");
                     }
                     break;
                 case "4":

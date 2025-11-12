@@ -1,4 +1,4 @@
-package exercise1;
+package level1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,9 +27,11 @@ public class Undo {
         }
     }
 
-    public void rmCommandByPos(int position) throws IndexOutOfBoundsException {
-        if (!history.isEmpty()) {
+    public void rmCommandByPos(int position) {
+        if (position >= 0 && position < history.size()) {
             history.remove(position - 1);
+        }else{
+            System.out.println("This position does not exists, please choose option 5 'Show command's history' to verify the correct position");
         }
     }
 

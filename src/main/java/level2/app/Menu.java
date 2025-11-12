@@ -1,14 +1,13 @@
-package exercise2.app;
+package level2.app;
 
-import exercise2.factory.ContactFactory;
-import exercise2.factory.FactoryLoader;
+import level2.factory.ContactFactory;
+import level2.factory.FactoryLoader;
 
 import java.util.Scanner;
 
 public class Menu {
     private Agenda agenda;
     private Scanner scanner;
-    private ContactFactory factory;
 
     public Menu(){
         this.agenda = new Agenda();
@@ -16,15 +15,18 @@ public class Menu {
 
     }
 
+    private void printMenu(){
+        System.out.println("\n MAIN MENU");
+        System.out.println("1. Add contact");
+        System.out.println("2. Print agenda");
+        System.out.println("3. Exit");
+        System.out.print("SSelect an option: ");
+    }
+
     public void executeMenu(){
         int option = 0;
         while (option != 3){
-            System.out.println("\n MAIN MENU");
-            System.out.println("1. Add contact");
-            System.out.println("2. Print agenda");
-            System.out.println("3. Exit");
-            System.out.print("SSelect an option: ");
-
+            printMenu();
             try {
                 option = Integer.parseInt(scanner.nextLine());
             } catch (NumberFormatException e) {
@@ -47,7 +49,7 @@ public class Menu {
 
         System.out.print("Select the country by typing one fo the following options: ES, FR, US: ");
         country = scanner.nextLine().toUpperCase();
-        factory = FactoryLoader.getFactory(country);
+        ContactFactory factory = FactoryLoader.getFactory(country);
 
         System.out.print("\nIntroduce conact name: ");
         name = scanner.nextLine();

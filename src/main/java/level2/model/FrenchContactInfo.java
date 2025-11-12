@@ -1,4 +1,4 @@
-package exercise2.model;
+package level2.model;
 
 public class FrenchContactInfo extends AbstractContactInfo {
 

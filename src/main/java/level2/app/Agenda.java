@@ -1,7 +1,7 @@
-package exercise2.app;
+package level2.app;
 
-import exercise2.factory.ContactFactory;
-import exercise2.model.ContactInfo;
+import level2.factory.ContactFactory;
+import level2.model.ContactInfo;
 
 import java.util.ArrayList;
 import java.util.Comparator;
