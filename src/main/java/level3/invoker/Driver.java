@@ -4,7 +4,7 @@ import level3.command.Command;
 
 public class Driver {
 
-    public void useVehicle(Command command){
+    public void useVehicle(Command command) {
         command.execute();
     }
 

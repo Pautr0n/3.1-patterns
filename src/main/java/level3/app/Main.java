@@ -1,7 +1,7 @@
 package level3.app;
 
-import level3.command.BrakeVehicle;
 import level3.command.AccelerateVehicle;
+import level3.command.BrakeVehicle;
 import level3.command.StartStopVehicle;
 import level3.invoker.Driver;
 import level3.model.Airplane;
@@ -10,7 +10,7 @@ import level3.model.Car;
 import level3.model.CruiseShip;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Airplane airplane = new Airplane("Airbus A380");
         System.out.println(airplane);

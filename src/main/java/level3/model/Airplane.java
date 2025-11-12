@@ -21,11 +21,11 @@ public class Airplane extends Vehicle {
     @Override
     public void brake(int speedDecrease) {
 
-        if(!this.getIsOn()){
+        if (!this.getIsOn()) {
             System.out.println("Cannot brake, engine must be on");
-        }else if(this.getSpeed() > 0){
+        } else if (this.getSpeed() > 0) {
             System.out.println("Decreasing turbofan engine power, reducing speed by: " + speedDecrease);
-        }else {
+        } else {
             System.out.println("Airplane already stopped.");
         }
 

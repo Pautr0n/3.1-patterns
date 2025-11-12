@@ -9,7 +9,7 @@ public class SpanishContactInfo extends AbstractContactInfo {
 
     @Override
     public String getAddress() {
-        return surname + " " + name + " | " + street  +"," + postalCode + " (" + city + ")" + " Spain";
+        return surname + " " + name + " | " + street + "," + postalCode + " (" + city + ")" + " Spain";
     }
 
     @Override

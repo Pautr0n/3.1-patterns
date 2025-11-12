@@ -4,9 +4,9 @@ import level3.model.Vehicle;
 
 public class StartStopVehicle implements Command {
 
-    private Vehicle vehicle;
+    private final Vehicle vehicle;
 
-    public StartStopVehicle(Vehicle vehicle){
+    public StartStopVehicle(Vehicle vehicle) {
         this.vehicle = vehicle;
     }
 

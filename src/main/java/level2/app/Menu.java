@@ -9,13 +9,13 @@ public class Menu {
     private Agenda agenda;
     private Scanner scanner;
 
-    public Menu(){
+    public Menu() {
         this.agenda = new Agenda();
         this.scanner = new Scanner(System.in);
 
     }
 
-    private void printMenu(){
+    private void printMenu() {
         System.out.println("\n MAIN MENU");
         System.out.println("1. Add contact");
         System.out.println("2. Print agenda");
@@ -23,9 +23,9 @@ public class Menu {
         System.out.print("SSelect an option: ");
     }
 
-    public void executeMenu(){
+    public void executeMenu() {
         int option = 0;
-        while (option != 3){
+        while (option != 3) {
             printMenu();
             try {
                 option = Integer.parseInt(scanner.nextLine());
@@ -44,7 +44,7 @@ public class Menu {
 
     }
 
-    private void addContactForm(){
+    private void addContactForm() {
         String name, surname, street, postalCode, city, phoneNumber, country;
 
         System.out.print("Select the country by typing one fo the following options: ES, FR, US: ");
