@@ -2,7 +2,7 @@ package level2.factory;
 
 public class FactoryLoader {
 
-    public static ContactFactory getFactory (String country){
+    public static ContactFactory getFactory(String country) {
 
         return switch (country) {
             case "ES" -> new SpanishFactory();

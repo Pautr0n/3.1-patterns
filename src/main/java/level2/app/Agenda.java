@@ -9,24 +9,24 @@ import java.util.List;
 
 public class Agenda {
     private List<ContactInfo> contacts;
-    private ContactInfo contact;
 
     public Agenda() {
         this.contacts = new ArrayList<>();
     }
 
     public void addContact(ContactFactory factory, String name, String surname, String street, String postalCode, String city, String phoneNumber) {
-        this.contact = factory.createContactInfo(name, surname, street, postalCode, city, phoneNumber);
+        ContactInfo contact = factory.createContactInfo(name, surname, street, postalCode, city, phoneNumber);
         contacts.add(contact);
     }
 
     public void printContacts() {
         if (contacts.isEmpty()) {
             System.out.println("Agenda is empty.");
-            return;
+            //return;
         }
 
         contacts.sort(Comparator.comparing(ContactInfo::getSurname));
+        contacts.forEach(System.out::println);
 
         System.out.println("Agenda's Contacts:");
         for (ContactInfo contact : contacts) {

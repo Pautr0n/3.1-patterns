@@ -1,4 +1,5 @@
 package level3.model;
+
 // es el template del que hace el request.
 public abstract class Vehicle {
 
@@ -6,21 +7,21 @@ public abstract class Vehicle {
     private int speed = 0;
     private boolean isOn = false;
 
-    public Vehicle(String model){
+    public Vehicle(String model) {
         this.model = model;
     }
 
-    public void accelerate(int speedIncrease){
+    public void accelerate(int speedIncrease) {
         speed += speedIncrease;
         System.out.println("New speed " + speed);
     }
 
-    public void brake(int speedDecrease){
+    public void brake(int speedDecrease) {
         speed -= speedDecrease;
         System.out.println("New speed " + speed);
     }
 
-    public boolean switchOnOff(){
+    public boolean switchOnOff() {
         isOn = !isOn;
         return isOn;
     }
@@ -38,7 +39,7 @@ public abstract class Vehicle {
     }
 
 
-    public boolean getIsOn(){
+    public boolean getIsOn() {
         return isOn;
     }
 

@@ -17,7 +17,7 @@ public class Bicycle extends Vehicle {
         if (this.getSpeed() > 0) {
             System.out.println("Exiting lightspeed...");
             super.brake(speedDecrease);
-        }else{
+        } else {
             System.out.println("Bicycle already stopped....");
         }
     }

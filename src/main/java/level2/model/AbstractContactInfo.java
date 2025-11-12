@@ -5,7 +5,7 @@ public abstract class AbstractContactInfo implements ContactInfo {
 
     public AbstractContactInfo(String name, String surname, String street, String postalCode, String city, String phoneNumber) {
 
-        this.name =  name;
+        this.name = name;
         this.surname = surname;
         this.street = street;
         this.postalCode = postalCode;
